@@ -1,3 +1,4 @@
+
 package br.edu.imepac.DAOs;
 import br.edu.imepac.entidades.FuncionarioEntidade;
 import br.edu.imepac.interfaces.InterfaceDAO;
@@ -34,5 +35,6 @@ public class FuncionarioDAO implements InterfaceDAO<FuncionarioEntidade> {
     public Integer delete(Long id) {
         return null;
     }
+
 
 }

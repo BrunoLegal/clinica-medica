@@ -35,4 +35,5 @@ public class ConsultaDAO implements InterfaceDAO<ConsultaEntidade> {
         return null;
     }
 
+
 }
