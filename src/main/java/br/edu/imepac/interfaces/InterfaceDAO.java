@@ -1,4 +1,4 @@
-package br.edu.imepac.entidades.interfaces;
+package br.edu.imepac.interfaces;
 
 import java.util.ArrayList;
 
