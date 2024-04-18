@@ -11,19 +11,19 @@ public class PacienteEntidade {
     private String historicoMedico;
     private GeneroEnums genero;
 
-    public PacienteEntidade(Long id, String nome, Date dataNascimento, String historicoMedico, GeneroEnums genero) {
+    public PacienteEntidade(Long id, String nome, Date dataNascimento, String historicoMedico,  String genero) {
         this.id = id;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.historicoMedico = historicoMedico;
-        this.genero = genero;
+        this.setGenero(genero);
     }
 
-    public PacienteEntidade(String nome, Date dataNascimento, String historicoMedico, GeneroEnums genero) {
+    public PacienteEntidade(String nome, Date dataNascimento, String historicoMedico, String genero) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.historicoMedico = historicoMedico;
-        this.genero = genero;
+        this.setGenero(genero);
     }
 
     public Long getId() {
@@ -58,12 +58,12 @@ public class PacienteEntidade {
         this.historicoMedico = historicoMedico;
     }
 
-    public GeneroEnums getGenero() {
-        return genero;
+    public String getGenero() {
+        return genero.toString();
     }
 
-    public void setGenero(GeneroEnums genero) {
-        this.genero = genero;
+    public void setGenero(String genero) {
+        this.genero = GeneroEnums.valueOf(genero);
     }
 
 
