@@ -11,6 +11,20 @@ public class PacienteEntidade {
     private String historicoMedico;
     private GeneroEnums genero;
 
+    public PacienteEntidade(Long id, String nome, Date dataNascimento, String historicoMedico, GeneroEnums genero) {
+        this.id = id;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.historicoMedico = historicoMedico;
+        this.genero = genero;
+    }
+
+    public PacienteEntidade(String nome, Date dataNascimento, String historicoMedico, GeneroEnums genero) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.historicoMedico = historicoMedico;
+        this.genero = genero;
+    }
 
     public Long getId() {
         return id;

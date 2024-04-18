@@ -6,6 +6,19 @@ public class MedicoEntidade {
     private String especialidade;
     private String CRM;
 
+    public MedicoEntidade(Long id, String nome, String especialidade, String CRM) {
+        this.id = id;
+        this.nome = nome;
+        this.especialidade = especialidade;
+        this.CRM = CRM;
+    }
+
+    public MedicoEntidade(String nome, String especialidade, String CRM) {
+        this.nome = nome;
+        this.especialidade = especialidade;
+        this.CRM = CRM;
+    }
+
     public Long getId() {
         return id;
     }

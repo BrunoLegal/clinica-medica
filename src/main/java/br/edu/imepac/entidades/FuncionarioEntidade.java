@@ -6,6 +6,21 @@ public class FuncionarioEntidade {
     private String cargo;
     private String departamento;
 
+    public FuncionarioEntidade(Long id, String nome, String cargo, String departamento) {
+        this.id = id;
+        this.nome = nome;
+        this.cargo = cargo;
+        this.departamento = departamento;
+    }
+
+    public FuncionarioEntidade(String nome, String cargo, String departamento) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.departamento = departamento;
+    }
+
+    public FuncionarioEntidade() {
+    }
 
     public Long getId() {
         return id;
