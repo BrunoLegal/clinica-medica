@@ -9,6 +9,24 @@ public class ConsultaEntidade {
     private String motivo;
     private Date data;
 
+    public ConsultaEntidade(Long id, Long idPaciente, Long idMedico, String motivo, Date data) {
+        this.id = id;
+        this.idPaciente = idPaciente;
+        this.idMedico = idMedico;
+        this.motivo = motivo;
+        this.data = data;
+    }
+
+    public ConsultaEntidade(Long idPaciente, Long idMedico, String motivo, Date data) {
+        this.idPaciente = idPaciente;
+        this.idMedico = idMedico;
+        this.motivo = motivo;
+        this.data = data;
+    }
+
+    public ConsultaEntidade() {
+    }
+
     public Long getId() {
         return id;
     }
