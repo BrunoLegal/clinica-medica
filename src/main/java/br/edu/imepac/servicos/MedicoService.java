@@ -13,6 +13,9 @@ public class MedicoService {
     public ArrayList<MedicoEntidade> listarTodosMedicos(){
         return medicoDAO.readAll();
     }
+    public MedicoEntidade buscarMedico(Long id){
+        return medicoDAO.read(id);
+    }
     public Integer atualizarMedico(MedicoEntidade medicoEntidade){
         return medicoDAO.update(medicoEntidade);
     }
